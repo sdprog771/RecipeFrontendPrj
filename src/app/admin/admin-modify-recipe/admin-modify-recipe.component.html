@@ -1,0 +1,137 @@
+
+<div class="container bg-dark">
+  <div class="row mt-5">
+
+    <form [formGroup]="recipeForm">
+      <div class="form-group row mt-1">
+        <label for="title" class="col-sm-3 col-form-label" style="font-size: 18px">Title:</label>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" id="title" formControlName="title">
+        </div>
+      </div>
+      <div class="form-group row mt-1">
+        <label for="cuisine" class="col-sm-3 col-form-label" style="font-size: 18px">Cuisine:</label>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" id="cuisine" formControlName="cuisine">
+        </div>
+      </div>
+      <div class="form-group row mt-1">
+        <label for="category" class="col-sm-3 col-form-label" style="font-size: 18px">Category:</label>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" id="category" formControlName="category">
+        </div>
+      </div>
+
+      <div class="form-group row mt-1">
+        <label for="preparationTime" class="col-sm-3 col-form-label" style="font-size: 18px">Preparation Time:</label>
+        <div class="col-sm-11">
+          <select class="form-select" id="preparationTime">
+            <option selected></option>
+            <option>15'</option>
+            <option>30'</option>
+            <option>45'</option>
+            <option>1 hr</option>
+            <option>1 hr 30'</option>
+            <option>2 hr</option>
+            <option>2 hr 30'</option>
+            <option>3 hr</option>
+            <option>3 hr 30'</option>
+            <option>4 hr</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row mt-1">
+        <label for="cookingTime" class="col-sm-3 col-form-label" style="font-size: 18px">Cooking Time:</label>
+        <div class="col-sm-11">
+          <select class="form-select" id="cookingTime">
+            <option selected></option>
+            <option>15'</option>
+            <option>30'</option>
+            <option>45'</option>
+            <option>1 hr</option>
+            <option>1 hr 30'</option>
+            <option>2 hr</option>
+            <option>2 hr 30'</option>
+            <option>3 hr</option>
+            <option>3 hr 30'</option>
+            <option>4 hr</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row mt-1">
+        <label for="source" class="col-sm-3 col-form-label" style="font-size: 18px">Source:</label>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" id="source" formControlName="source">
+        </div>
+      </div>
+
+      <div class="form-group row mt-1">
+        <label for="nutritionValues" class="col-sm-3 col-form-label" style="font-size: 18px">Nutrition values:</label>
+        <div class="col-sm-11">
+          <select class="form-select" multiple id="nutritionValues">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+            <option value="6">Six</option>
+            <option value="7">Seven</option>
+            <option value="8">Eight</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row mt-1 ">
+        <label for="descriptionTextarea" class="col-sm-3 col-form-label " style="font-size: 18px">Recipe
+          Description:</label>
+        <div class="col-sm-11">
+          <textarea type="text" class="form-control mb-1" id="descriptionTextarea" rows="3"></textarea>
+        </div>
+      </div>
+
+
+      <div class="form-group row mt-1">
+        <label for="ingredients" class="col-sm-3 col-form-label" style="font-size: 18px">Ingredients:</label>
+        <div class="col-sm-11">
+          <select class="form-select" multiple id="ingredients">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+            <option value="6">Six</option>
+            <option value="7">Seven</option>
+            <option value="8">Eight</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row mt-1">
+        <label for="cookingTools" class="col-sm-3 col-form-label" style="font-size: 18px">Cooking Tools:</label>
+        <div class="col-sm-11">
+          <select class="form-select" multiple id="cookingTools">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+            <option value="6">Six</option>
+            <option value="7">Seven</option>
+            <option value="8">Eight</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row mt-1">
+        <label for="recipeImage" class="col-sm-3 col-form-label" style="font-size: 18px">Select a recipe image.</label>
+        <div class="col-sm-11">
+        <input type="file" class="form-control-file" id="recipeImage">
+          </div>
+      </div>
+
+      <button type="button" class="btn btn-success mt-3" (click)="createRecipe()">Save Recipe</button>
+    </form>
+  </div>
+</div>

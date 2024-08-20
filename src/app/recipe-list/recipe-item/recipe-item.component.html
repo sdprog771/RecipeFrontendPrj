@@ -1,0 +1,21 @@
+<div class="container-fluid bg-dark ">
+  <div class="row">
+
+    <div class="row g-3 mx-2 mb-5">
+      <div class="col-sm-12 col-md-4 col-lg-2" *ngFor="let rcp of recipes">
+        <div class="card border-0">
+          <a routerLink="recipe" class="list-group-item clearfix">
+            <img class=" card-img-top" [src]="rcp.imagePath" style="width: available;  " alt="{{rcp.title}}">
+            <div class="card-body">
+              <h5 class="card-title">{{rcp.title}}</h5>
+              <p class="card-text">{{rcp.category}}</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

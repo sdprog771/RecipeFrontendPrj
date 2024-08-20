@@ -1,0 +1,33 @@
+@import 'material-icons/iconfont/material-icons.css';
+
+
+* {
+  color: bisque;
+}
+input,textarea,select {
+  color: bisque;
+  background-color: #6c7373;
+}
+
+option{
+  color: black;
+}
+
+/* here are css properties for elements to choose from nutrition, cooking and tools lists*/
+.chip-close{
+  font-size: 1rem;
+  margin-left: 0.5rem;
+
+}
+
+.chip-close:hover{
+  cursor: pointer;
+  color: crimson;
+}
+
+.chip{
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+}

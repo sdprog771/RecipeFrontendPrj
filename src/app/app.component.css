@@ -1,0 +1,30 @@
+
+.img{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  filter: brightness(0.6);
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index:-1;
+}
+
+.routingContainer{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+
+}
+
+html,body {
+  height: 100%;
+}
+
+.drop{
+  caret: black;
+}
