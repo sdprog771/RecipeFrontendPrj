@@ -15,9 +15,7 @@ import {AdminModifyRecipeComponent} from "./admin/admin-modify-recipe/admin-modi
 const routes: Routes = [
   {path: "", component:  RecipeListComponent},
   {path: "recipe", component: RecipeItemComponent},
-  {path: "admin", component: AdminComponent},
-  {path: "admin/adminEditRecipe", component: AdminRecipeListComponent},
-  {path: "admin/adminAddRecipe", component: AdminModifyRecipeComponent},
+  {path: "create", component: AdminModifyRecipeComponent},
 ];
 
 @NgModule({

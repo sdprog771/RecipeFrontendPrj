@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewChild, ViewEncapsulation, Input} from '@angular/core';
 import {Recipe} from "../model/recipe.model";
 import {RecipeService} from "../services/recipe.service";
 import {IRecipe} from "../model/IRecipe";
@@ -11,8 +11,9 @@ import {HttpClient} from "@angular/common/http";
   styleUrls: ['./recipe-list.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class RecipeListComponent implements OnInit {
 
+
+export class RecipeListComponent implements OnInit {
 
 /*  recipes: Recipe[] = [
     new Recipe(1,"Farfalle with pesto sauce and tomatoes" ,"" ,"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80")
@@ -46,4 +47,8 @@ export class RecipeListComponent implements OnInit {
 
 
 
+
+  BoldText() {
+    ////ADD CODE HERE
+  }
 }

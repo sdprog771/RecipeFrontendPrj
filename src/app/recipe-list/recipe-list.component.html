@@ -1,6 +1,21 @@
 <div class="container-fluid bg-dark" >
   <div class="row">
 
+
+      <div class="search mt-5">
+        <div class="row">
+          <div class="" style=" display: flex; justify-content: center; align-items: center;">
+            <div>
+              <div class="bg-dark">
+                <i class='bx'></i>
+                <input class="searchBar" type="text" placeholder="Enter a recipe here">
+                <button id="button" class="searchButton" (click)="BoldText()">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="row g-3 mb-5">
       <app-recipe-item [recipesItem]="recipes"></app-recipe-item>
 <!--      <div class="col-sm-12 col-md-4 col-lg-2" >-->
